@@ -9,10 +9,10 @@
 }
 
 .card_topContainer {
-    height: 40%;
+    height: 37%;
     width: 100%;
     background: linear-gradient(270deg, #511D4B 0%, #35002F 100%);
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -21,16 +21,17 @@
 }
 
 .cardTitle {
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 600;
-    width: 80%;
+    width: 76%;
 }
 
 .card_bottomContainer {
-    height: 60%;
+    height: 63%;
     width: 100%;
     background: linear-gradient(270deg, #1A1A1A 0%, #141414 100%);
     padding: 1.5rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -45,14 +46,14 @@
 }
 
 .divHeader {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     color: #7B7B7B;
     text-transform: uppercase;
 }
 
 .divInfo {
-    font-size: 32px;
+    font-size: 29px;
     font-weight: 600;
 }
 
@@ -66,26 +67,27 @@
 }
 
 .strikeThrough {
-    font-size: 26px;
+    font-size: 24px;
     color: #3A3A3A;
     display: flex;
     position: relative;
+    border: 1px solid white;
 }
 
 .strikeThrough hr {
     position: absolute;
-    width: 85%;
+    width: 115%;
     height: 3px;
     border: none;
-    background-color: #7B7B7B;
-    transform: rotate(12deg) translate(-50%, -50%);
+    background-color: #3A3A3A;
+    transform: rotate(8deg);
     transform-origin: left center;
-    left: 50%;
-    top: 50%;
+    left: -5px;
+    top: 30%;
 }
 
 .divInfo.checks {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     display: flex;
     align-items: flex-start;
@@ -118,6 +120,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .actionBtn {

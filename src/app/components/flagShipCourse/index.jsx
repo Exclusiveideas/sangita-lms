@@ -15,7 +15,6 @@ const cardInfo = {
 const FlagShipCourse = () => {
   return (
     <div className="flagShipCourse_wrapper">
-      {/* <div className="innerFlagShipContainer"> */}
       <div className="courseDetails_wrapper">
         <div className="courseDetails_wrapper_top">
           <h4 className="flagship_labelTxt">Course</h4>
@@ -71,7 +70,6 @@ const FlagShipCourse = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

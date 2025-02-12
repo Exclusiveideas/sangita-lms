@@ -1,6 +1,6 @@
 .topCoursesWrapper {
     width: 100%;
-    height: 130vh;
+    height: 150vh;
     background-color: black;
     box-sizing: border-box;
     color: white;
@@ -13,7 +13,7 @@
 }
 
 .topCoursesTitle {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 500;
 }
 

@@ -16,6 +16,7 @@
     justify-content: space-between;
     padding: 2rem;
     position: relative;
+    gap: 2rem;
 }
 
 .gridLines {
@@ -58,6 +59,7 @@
     box-sizing: border-box;
     color: white;
     gap: 1.5rem;
+    padding-left: 4.5rem;
 }
 
 .heroTitleWrapper {
@@ -67,7 +69,7 @@
 }
 
 .heroTxt {
-    font-size: 71px;
+    font-size: 62px;
     font-weight: 400;
 }
 
@@ -81,12 +83,13 @@
 }
 
 .heroDesc {
-    font-size: 25px;
+    /* width: 80%; */
+    font-size: 22px;
     line-height: 135%;
 }
 
 .heroCta {
-    padding: .9rem 1.4rem;
+    padding: .8rem 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,9 +103,27 @@
     cursor: pointer;
 }
 
+.ctaIcon {
+    width: 27px;
+    height: max-content;
+}
+
+
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .profileImg {
-    height: 562px;
+    height: 90%;
     width: max-content;
 }
