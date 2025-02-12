@@ -1,6 +1,6 @@
 .flagShipCourse_wrapper {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
     background: linear-gradient(270deg, #511D4B 0%, #35002F 100%);
     color: white;
@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    height: max-content;
+    padding: 3rem 0;
 }
 
 .courseDetails_wrapper {
@@ -36,13 +38,13 @@
 }
 
 .flagship_courseTitle {
-    font-size: 55px;
+    font-size: 4vw;
     font-weight: 600;
     width: 70%;
 }
 
 .flagship_courseDesc {
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: 500;
     width: 80%;
 }
@@ -58,21 +60,16 @@
 }
 
 .flagship_divHeader {
-    font-size: 19px;
+    font-size: 1.2vw;
     font-weight: 500;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.divInfo {
-    font-size: 32px;
-    font-weight: 600;
-}
-
 
 .flagship_divInfo.checks {
-    font-size: 17px;
+    font-size: 1.1vw;
     font-weight: 400;
     display: flex;
     align-items: flex-start;
@@ -138,20 +135,18 @@
 
 .courseCard_wrapper {
     width: 50%;
-    height: 100%;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* border: 1px solid white; */
 }
 
 .flagship_card {
     width: 70%;
-    height: 60%;
+    height: 100%;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -169,6 +164,47 @@
     border-top-left-radius: 35px;
 }
 
+
+
+.mentorInfo.flagship {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+
+.divHeader.flagship {
+    font-size: 13px;
+    font-weight: 500;
+    color: #7B7B7B;
+    text-transform: uppercase;
+}
+
+
+.divInfo.flagship {
+    font-size: 29px;
+    font-weight: 600;
+}
+
+.divInfo.div.flagship {
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+.strikeThrough.flagship {
+    font-size: 24px;
+    color: #3A3A3A;
+    display: flex;
+    position: relative;
+    /* border: 1px solid white; */
+}
+
+
 .lowerContainer {
     width: 100%;
     height: 40%;
@@ -180,4 +216,170 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+
+
+@media (max-width: 992px) {
+    
+    .flagShipCourse_wrapper {
+        flex-direction: column;
+    }
+
+    
+.courseDetails_wrapper {
+    padding-left: 15%;
+    width: 90%;
+    gap: 1.3rem;
+}
+
+.flagship_labelTxt {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.flagship_courseTitle {
+    width: 95%;
+}
+
+.flagship_courseDesc {
+    font-weight: 400;
+    width: 95%;
+}
+
+
+
+.flagship_actionBtnWrapper {
+    padding: 1rem 0;
+    gap: 2rem;
+}
+
+.flagship_actionBtn {
+    width: max-content;
+    padding: .8rem 3.5rem;
+    font-weight: 600;
+}
+
+.flagship_actionBtn.view {
+    border: 1px solid #ffffff;
+}
+
+
+
+
+.courseCard_wrapper {
+    width: 60%;
+    height: 45vh;
+}
+
+.flagship_card {
+    width: 100%;
+    height: 100%;
+}
+
+.starContainer {
+    right: -18px;
+    top: -18px;
+}
+
+.lowerContainer {
+    /* height: 50%; */
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+
+}
+
+
+@media (max-width: 575px) {
+    .flagShipCourse_wrapper {
+        flex-direction: column;
+    }
+
+    
+.courseDetails_wrapper {
+    padding-left: 0;
+    width: 90%;
+    gap: 1.3rem;
+}
+
+.flagship_labelTxt {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.flagship_courseTitle {
+    font-size: 12vw;
+    width: 95%;
+}
+
+.flagship_courseDesc {
+    font-size: 4vw;
+    font-weight: 400;
+    width: 95%;
+}
+
+
+.flagship_divHeader {
+    font-size: 4.4vw;
+}
+
+
+.flagship_divInfo.checks {
+    font-size: 3.7vw;
+}
+
+
+.flagship_actionBtnWrapper {
+    padding: 1rem 0;
+    gap: 2rem;
+}
+
+.flagship_actionBtn {
+    width: max-content;
+    padding: .8rem 3.5rem;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.flagship_actionBtn.view {
+    border: 1px solid #ffffff;
+}
+
+
+
+
+.courseCard_wrapper {
+    width: 85%;
+    height: 50vh;
+}
+
+.flagship_card {
+    width: 100%;
+    height: 100%;
+}
+
+.starContainer {
+    right: -18px;
+    top: -18px;
+}
+
+.cardStar {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.upperContainer {
+    height: 50%;
+}
+
+.lowerContainer {
+    height: 50%;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+
 }

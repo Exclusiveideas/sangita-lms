@@ -43,16 +43,16 @@ const FlagShipCourse = () => {
       <div className="courseCard_wrapper">
         <div className="flagship_card">
           <div className="upperContainer"></div>
-          <div className="lowerContainer">
-            <div className="mentorInfo">
-              <p className="divHeader">Mentor</p>
-              <p className="divInfo">Sangita Bhattacharya</p>
+          <div className="lowerContainer"> 
+            <div className="mentorInfo flagship">
+              <p className="divHeader flagship">Mentor</p>
+              <p className="divInfo flagship">Sangita Bhattacharya</p>
             </div>
-            <div className="mentorInfo">
-              <p className="divHeader">Starting at</p>
-              <div className="divInfo div">
+            <div className="mentorInfo flagship">
+              <p className="divHeader flagship">Starting at</p>
+              <div className="divInfo div flagship">
                 <p>6,499/-</p>
-                <div className="strikeThrough">
+                <div className="strikeThrough flagship">
                   <p>1,95,000</p>
                   <hr />
                 </div>

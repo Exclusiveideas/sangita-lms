@@ -9,7 +9,7 @@ const TrustedPartner = () => {
         <Image
           src={`/partner/genpact.svg`}
           width={161}
-          height={60}
+          height={60} 
           alt="partners logo"
           className="partnerLogo"
         />

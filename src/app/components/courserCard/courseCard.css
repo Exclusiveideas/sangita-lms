@@ -1,10 +1,10 @@
 
 
 .courseCard {
-    min-height: 671.42px;
-    width: 460px;
+    width: 28%;
     border-radius: 16px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    min-height: 100%;
     height: max-content;
 }
 
@@ -143,4 +143,29 @@
 
 .actionBtn.view {
     border: 1px solid #3A3A3A;
+}
+
+
+
+@media (max-width: 992px) {
+    
+.courseCard {
+    width: 60%;
+}
+}
+
+
+@media (max-width: 575px) {
+    
+.courseCard {
+    width: 90%;
+}
+
+
+.cardTitle {
+    font-size: 9vw;
+    font-weight: 600;
+    width: 95%;
+}
+
 }
