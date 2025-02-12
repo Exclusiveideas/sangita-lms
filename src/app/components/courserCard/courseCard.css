@@ -2,7 +2,7 @@
 
 .courseCard {
     min-height: 671.42px;
-    width: 440px;
+    width: 460px;
     border-radius: 16px;
     overflow: hidden;
     height: max-content;
@@ -85,7 +85,7 @@
 }
 
 .divInfo.checks {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     display: flex;
     align-items: flex-start;

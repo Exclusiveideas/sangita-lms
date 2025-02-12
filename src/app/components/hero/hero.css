@@ -67,12 +67,13 @@
 }
 
 .heroTxt {
-    font-size: 72px;
+    font-size: 71px;
     font-weight: 400;
 }
 
 .heroTxt .hey {
     font-style: italic;
+    font-family: var(--font-ibm-plex-serif), Arial, Helvetica, sans-serif;
 }
 
 .heroTxt .name {

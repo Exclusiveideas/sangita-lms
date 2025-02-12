@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Adjust weights as needed
+  variable: "--font-ibm-plex-serif" // Custom CSS variable
 });
 
 export const metadata = {
@@ -38,7 +44,7 @@ export default function RootLayout({ children }) {
       {/* Manifest (Optional for PWA) */}
       <link rel="manifest" href="/site.webmanifest" />
     </Head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexSerif.variable}`}>
         {children}
       </body>
     </html>
