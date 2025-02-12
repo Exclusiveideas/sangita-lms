@@ -1,0 +1,27 @@
+
+.trustedPartnerWrapper {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.sectionTitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #7B7B7B;
+    font-weight: 500;
+}
+
+.partnersWrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}

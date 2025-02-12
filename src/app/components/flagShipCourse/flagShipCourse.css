@@ -1,0 +1,175 @@
+.flagShipCourse_wrapper {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(270deg, #511D4B 0%, #35002F 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.courseDetails_wrapper {
+    display: flex;
+    align-items: baseline;
+    padding-left: 10%;
+    justify-content: center;
+    /* border: 1px solid white; */
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+    gap: 3rem;
+}
+
+.courseDetails_wrapper_top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flagship_labelTxt {
+    color: #E44195;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.flagship_courseTitle {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.flagship_courseDesc {
+    font-size: 25px;
+    font-weight: 500;
+    width: 80%;
+}
+
+
+
+
+.flagship_mentorInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: 1px solid white; */
+}
+
+.flagship_divHeader {
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+
+.divInfo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.flagship_divInfo.checks {
+    font-size: 23px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+.flagship_courseChecks {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.flagship_courseChecks::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: -1.7rem;
+    transform: translateY(-50%);
+    color: white;
+}
+
+
+.flagship_actionBtnWrapper {
+    width: max-content;
+    height: max-content;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    /* border: 1px solid white; */
+}
+
+.flagship_actionBtn {
+    width: 230px;
+    height: max-content;
+    padding: 1rem 0;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.flagship_actionBtn.buy {
+    background-color: white;
+    color: black;
+}
+
+.flagship_actionBtn.view {
+    border: 1px solid #3A3A3A;
+}
+
+.courseCard_wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+}
+
+.flagship_card {
+    width: 70%;
+    height: 60%;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.starContainer {
+    position: absolute;
+    right: -20px;
+    top: -30px;
+}
+
+.upperContainer {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.lowerContainer {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(270deg, #1A1A1A 0%, #141414 100%);
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 0 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

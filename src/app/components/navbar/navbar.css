@@ -1,0 +1,58 @@
+.navbarWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 4.5rem;
+    z-index: 50;
+}
+
+.navTextContainer {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    color: white;
+}
+
+.navTxt {
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navTxt.active { 
+    font-weight: bold;
+}
+
+.navTxt > hr {
+    position: absolute;
+    width: 0%;
+    border: none;
+    height: 2.5px;
+    background-color: white;
+    top: 110%;
+    left: -1%;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.navTxt:hover > hr {
+    width: 100%;
+}
+
+.navCtaWrapper {
+    /* border: 1px solid black; */
+}
+
+.navCTA {
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 64px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+

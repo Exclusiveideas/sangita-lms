@@ -1,0 +1,107 @@
+.heroWrapper {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 3rem 5rem;
+}
+
+.heroSubWrapper {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 202.95% at 50% 50%, #511D4B 0%, #35002F 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+}
+
+.gridLines {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extraGradientCirc {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: #e44195bf;
+    position: absolute;
+    left: -70px;
+    bottom: -70px;
+    filter: blur(200px);
+}
+
+.lowerSubHeroWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0;
+    gap: 8rem;
+    z-index: 50;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    color: white;
+    gap: 1.5rem;
+}
+
+.heroTitleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.heroTxt {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.heroTxt .hey {
+    font-style: italic;
+}
+
+.heroTxt .name {
+    font-weight: 500;
+}
+
+.heroDesc {
+    font-size: 25px;
+    line-height: 135%;
+}
+
+.heroCta {
+    padding: .9rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+    width: max-content;
+    border-radius: 56px;
+    gap: .7rem;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.profileImg {
+    height: 562px;
+    width: max-content;
+}
