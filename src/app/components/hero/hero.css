@@ -57,15 +57,23 @@
 }
 
 .leftContainer {
+    width: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.innerLeftContainer {
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
     color: white;
-    gap: 1.5rem;
-    padding-left: 4.5rem;
+    gap: 1rem;
+    padding-left: 1.5rem;
     justify-content: center;
-    /* border: 1px solid white; */
+    /* align-items: flex-end; */
     height: 100%;
 }
 
@@ -73,10 +81,11 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
 .heroTxt {
-    font-size: 4vw;
+    font-size: 3.7vw;
     font-weight: 400;
 }
 
@@ -144,7 +153,7 @@
 
 
 .profileImg {
-    height: 90%;
+    height: 100%;
     width: max-content;
 }
 
@@ -152,12 +161,10 @@
 
 
 /* Tab */
-@media (max-width: 992px) {
-
+@media (max-width: 1350px) {
 
 }
 
-/* Tab */
 @media (max-width: 992px) {
     .heroWrapper {
         padding: 2rem 2rem;
@@ -177,11 +184,19 @@
 
     .leftContainer {
         width: 90%;
-        gap: 1.5rem;
+    }
+
+    .innerLeftContainer {
+        
+        gap: 1rem;
         padding-left: 0;
     }
 
     
+    .heroTxt {
+        font-size: 7vw;
+    }
+
 
     .heroDesc {
         font-size: 2.5vw;
@@ -193,6 +208,9 @@
 }
 
 
+.checkMark.hero {
+    width: 6vw;
+}
     
 .profileImg {
     width: 100%;
