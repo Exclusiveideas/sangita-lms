@@ -47,6 +47,10 @@ export default function RootLayout({ children }) {
 
       {/* Manifest (Optional for PWA) */}
       <link rel="manifest" href="/site.webmanifest" />
+
+      <link rel="preconnect" href="//fdn.fontcdn.ir" />
+      <link rel="preconnect" href="//v1.fontapi.ir" />
+      <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet" />
     </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexSerif.variable}`}>
         {children}
