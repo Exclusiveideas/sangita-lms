@@ -44,7 +44,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> 
           <div className="rightContainer">
             <Image
               src={`/images/sangita.png`}

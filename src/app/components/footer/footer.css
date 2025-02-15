@@ -122,7 +122,7 @@
     }
 
     .videoContainer {
-        width: 50%;
+        width: 85%;
         height: 80%;
     }
 
@@ -147,6 +147,7 @@
 
     .rightFooter_lowerContainer {
         font-size: 4vw;
+        max-width: 95%;
     }
 
 
