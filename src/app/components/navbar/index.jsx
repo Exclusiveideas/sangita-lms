@@ -3,18 +3,19 @@
 import { useState } from "react";
 import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import Link from "next/link";
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("home");
-  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <div className="navbarWrapper">
@@ -39,22 +40,59 @@ const Navbar = () => {
         <button className="navCTA">Book A Session</button>
       </div>
       <div className="menuIconWrapper">
-        <Popover>
-          <PopoverTrigger asChild>
-            {!navbarOpen ? (
-              <MenuIcon className="menuIcon" />
-            ) : (
-              <CloseIcon className="menuIcon" />
-            )}
-          </PopoverTrigger>
-          <PopoverContent className="w-full popOverContent">
-            <Link href="#">Home</Link>
-            <Link href="#">Services</Link>
-            <Link href="#">Courses</Link>
-            <Link href="#">Booking Tab</Link>
-            <Link href="#">Events</Link>
-          </PopoverContent>
-        </Popover>
+        <Sheet className="sheet">
+          <SheetTrigger>
+            <MenuIcon className="menuIcon" />
+          </SheetTrigger>
+          <SheetContent className="sheetContent">
+            <SheetHeader>
+              <SheetTitle><p className="sheetTitle">Navigation</p></SheetTitle>
+              <SheetDescription>
+                <SheetClose asChild>
+                  <div className={`sheetNav ${activeNav == "home" && "active"}`}>
+                    Home
+                  </div>
+                </SheetClose>
+              </SheetDescription>
+              <SheetDescription>
+                <SheetClose asChild>
+                  <div
+                    className={`sheetNav ${activeNav == "services" && "active"}`}
+                  >
+                    Services
+                  </div>
+                </SheetClose>
+              </SheetDescription>
+              <SheetDescription>
+                <SheetClose asChild>
+                  <div
+                    className={`sheetNav ${activeNav == "courses" && "active"}`}
+                  >
+                    Courses
+                  </div>
+                </SheetClose>
+              </SheetDescription>
+              <SheetDescription>
+                <SheetClose asChild>
+                  <div
+                    className={`sheetNav ${activeNav == "booking" && "active"}`}
+                  >
+                    Booking Tab
+                  </div>
+                </SheetClose>
+              </SheetDescription>
+              <SheetDescription>
+                <SheetClose asChild>
+                  <div
+                    className={`sheetNav ${activeNav == "events" && "active"} `}
+                  >
+                    Events
+                  </div>
+                </SheetClose>
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
       </div>
     </div>
   );

@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 4.5rem;
     z-index: 50;
 }
 
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 3.5vw;
     color: white;
 }
 
@@ -25,6 +24,46 @@
 
 .navTxt.active {
     font-weight: bold;
+}
+
+.sheet {
+    
+    border: none;
+}
+
+
+.sheetTitle {
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.sheetContent {
+    background: radial-gradient(50% 202.95% at 50% 50%, #511D4B 0%, #35002F 100%);
+
+    color: white;
+    height: max-content;
+    border-radius: 12px;
+    margin-top: 4.5vw;
+    margin-right: 2vw;
+    border: none;
+}
+
+.sheetNav {
+    cursor: pointer;
+    padding: .5rem;
+    padding-left: 0;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 14px;
+}
+
+.sheetNav.active {
+    /* color: #c100aa; */
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .navTxt>hr {
@@ -83,7 +122,7 @@
 }
 
 
-
+ 
 /* Tab */
 @media (max-width: 992px) {
 
@@ -91,9 +130,6 @@
         display: none;
     }
 
-    .navbarWrapper {
-        padding: 0 1rem;
-    }
 
     .menuIconWrapper {
         display: flex;
