@@ -1,10 +1,9 @@
 .heroWrapper {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
     padding: 3.5vw 5vw;
     overflow: hidden;
-    height: max-content;
     display: flex;
 }
 
@@ -16,10 +15,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding-top: 2rem;
+    padding-left: 6vw;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
     position: relative;
-    gap: 2rem;
     overflow: hidden;
+    height: 100%;
+    gap: 2rem;
 }
 
 .gridLines {
@@ -54,6 +57,7 @@
     gap: 4rem;
     z-index: 50;
     height: 100%;
+    /* border: 1px solid white; */
 }
 
 .leftContainer {
@@ -64,16 +68,13 @@
 }
 
 .innerLeftContainer {
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
     color: white;
-    gap: 1rem;
-    /* padding-left: 1.5rem; */
+    gap: 1.5rem;
     justify-content: center;
-    /* align-items: flex-end; */
     height: 100%;
 }
 
@@ -85,8 +86,9 @@
 }
 
 .heroTxt {
-    font-size: 3.7vw;
+    font-size: 3.8vw;
     font-weight: 400;
+    line-height: 100%;
 }
 
 .checkMark.hero {
@@ -108,10 +110,8 @@
 }
 
 .heroDesc {
-    /* width: 80%; */
     font-size: 1.4vw;
     line-height: 135%;
-    /* font-weight: 200; */
 }
 
 .heroDesc.bolder {
@@ -131,6 +131,7 @@
     font-weight: 500;
     font-size: 18px;
     cursor: pointer;
+    margin-top: .5rem;
 }
 
 .ctaIcon {
@@ -148,16 +149,16 @@
     height: 100%;
     /* border: 1px solid white; */
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     padding-right: 0;
 }
 
 
 .profileImg {
     /* height: max-content; */
-    width: 100%;
+    /* width: 100%; */
     /* max-height: 600px; */
     max-height: 100%;
     aspect-ratio: 1;
@@ -172,9 +173,9 @@
 }
 
 @media (max-width: 1026px) {
-    /* .heroWrapper {
-        padding: 2rem 2rem;
-    } */
+    .heroWrapper {
+        height: max-content;
+    }
 
     .heroSubWrapper {
         padding: 2rem 2.5rem;
@@ -213,6 +214,8 @@
 .rightContainer {
     width: 100%;
     padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -232,7 +235,6 @@
     .heroSubWrapper {
         border-radius: 25px;
         padding: 1.5rem;
-        /* padding-left: 2rem; */
         gap: 3rem;
     }
 
@@ -242,8 +244,9 @@
     }
 
     .heroTxt {
-        font-size: 12vw;
+        font-size: 11vw;
         font-weight: 400;
+        line-height: normal;
     }
 
     .breakTxt {
